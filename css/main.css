@@ -36,6 +36,8 @@ nav {
  	color: #F2E6D0;
  }
 
+ nav a:focus {outline: none;}
+
 .flex-container {
 	margin: 0 auto;
 	max-width: 1024px;
@@ -55,7 +57,17 @@ nav {
 }
 
 .current-page {
-	border-bottom: 3px solid #FF6138;
+	/*border-bottom: 3px solid #FF6138;*/
+}
+
+#menu-pointer {
+	display: block;
+	height: 3px;
+	width: 80px;
+    position: relative;
+    bottom: 15px;
+    left: 23.2%;
+    background-color: #FF6138;
 }
 
 .mg50 {
@@ -100,7 +112,8 @@ a.lang {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate3d(-50%, -50%, 0);
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	        transform: translate3d(-50%, -50%, 0);
 	font: 800 50px 'Open Sans';
 	color: #F2E6D0;
 }
@@ -161,7 +174,7 @@ a.lang {
  */
 
 #main-activities {
-	min-height: 800px;
+	min-height: 100%;
 	color: #333
 }
 

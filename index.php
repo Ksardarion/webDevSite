@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 require_once "sys/classes/lang.class.php";
 ?>
 <!DOCTYPE html>
@@ -15,6 +17,7 @@ require_once "sys/classes/lang.class.php";
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="js/vendor/jquery-1.12.3.min.js"></script>
+	<script src="js/vendor/scrollspy.js"></script>
 	<script src="js/vendor/particles.min.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/scrollAppear.js"></script>
@@ -25,10 +28,10 @@ require_once "sys/classes/lang.class.php";
 	<header>
 		<nav>
 			<div class="flex-container">
-				<a href="#" class="current-page"><?=$lang['MENU_HOME']?></a>
+				<a href="#" id="current-page"><?=$lang['MENU_HOME']?></a>
 				<a href="#"><?=$lang['MENU_ABOUT_US']?></a>
 				<a href="#"><?=$lang['MENU_NEWS']?></a>
-				<a href="#" class="scrollTo" data-target="main-activities"><?=$lang['MENU_PORTFOLIO']?></a>
+				<a href="#main-activities" class="scrollTo" data-target="main-activities"><?=$lang['MENU_PORTFOLIO']?></a>
 				<a href="#"><?=$lang['MENU_CONTACT_US'] ?></a>
 
 				<!-- FOR LANGUAGES -->
@@ -36,6 +39,7 @@ require_once "sys/classes/lang.class.php";
 				<a href="#" class="lang">ru</a>
 				<a href="?lang=en" class="lang">eng</a>
 			</div>
+			<div id="menu-pointer"></div>
 		</nav>
 		<div class="banner" id="particles-js">
 			<h1><?=$lang['PAGE_TITLE']?></h1>

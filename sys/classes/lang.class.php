@@ -34,6 +34,6 @@ switch ($lang) {
   $lang_file = 'en.php';
  
 }
- 
-require_once 'C:/Server/data/htdocs/webDevSite/sys/plugins/languages/'.$lang_file;
+// getcwd() - повертаэ повний шлях для поточнго каталогу
+require_once getcwd().'/sys/plugins/languages/'.$lang_file;
 ?>
