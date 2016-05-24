@@ -28,11 +28,11 @@ require_once "sys/classes/lang.class.php";
 	<header>
 		<nav>
 			<div class="flex-container">
-				<a href="#" id="current-page"><?=$lang['MENU_HOME']?></a>
-				<a href="#"><?=$lang['MENU_ABOUT_US']?></a>
-				<a href="#"><?=$lang['MENU_NEWS']?></a>
-				<a href="#main-activities" class="scrollTo" data-target="main-activities"><?=$lang['MENU_PORTFOLIO']?></a>
-				<a href="#"><?=$lang['MENU_CONTACT_US'] ?></a>
+				<a href="#" class="menu-item" id="current-page"><?=$lang['MENU_HOME']?></a>
+				<a href="#" class="menu-item"><?=$lang['MENU_ABOUT_US']?></a>
+				<a href="#" class="menu-item"><?=$lang['MENU_NEWS']?></a>
+				<a href="#main-activities" class="scrollTo menu-item" data-target="main-activities"><?=$lang['MENU_PORTFOLIO']?></a>
+				<a href="#" class="menu-item"><?=$lang['MENU_CONTACT_US'] ?></a>
 
 				<!-- FOR LANGUAGES -->
 				<a href="?lang=ua" class="mg50 lang lang-active">ua</a>

@@ -12,7 +12,7 @@ $( document ).ready( function() {
 		menuPointer.css('left', currentPage.offset().left);
 	});
 
-	var menuElements = $('nav a');
+	var menuElements = $('nav a.menu-item');
 	menuElements.click(function(e) {
 		e.preventDefault();
 
