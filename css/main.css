@@ -36,6 +36,8 @@ nav {
  	color: #F2E6D0;
  }
 
+ nav a:focus {outline: none;}
+
 .flex-container {
 	margin: 0 auto;
 	max-width: 1024px;
@@ -172,7 +174,7 @@ a.lang {
  */
 
 #main-activities {
-	min-height: 800px;
+	min-height: 100%;
 	color: #333
 }
 
