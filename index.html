@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="js/vendor/jquery-1.12.3.min.js"></script>
+	<script src="js/vendor/scrollspy.js"></script>
 	<script src="js/vendor/particles.min.js"></script>
 	<script src="js/scroll.js"></script>
 	<script src="js/scrollAppear.js"></script>
@@ -22,8 +23,8 @@
 	<header>
 		<nav>
 			<div class="flex-container">
-				<a href="#" class="current-page">головна</a>
-				<a href="#">легенда</a>
+				<a href="#" id="current-page">головна</a>
+				<a href="#" class="scrollTo" data-target="main-activities">портфоліо</a>
 				<a href="#">новини</a>
 				<a href="#">виробництво</a>
 				<a href="#">продукція</a>
@@ -34,10 +35,12 @@
 				<a href="#" class="lang">ru</a>
 				<a href="#" class="lang">eng</a>
 			</div>
+			<!-- Елемент який вказує на поточний пункт меню -->
+			<div id="menu-pointer"></div>
 		</nav>
 		<div class="banner" id="particles-js">
 			<h1>CREATING WEB SITES</h1>
-			<div id="next-section" data-target="main-activities">
+			<div id="next-section" class="scrollTo" data-target="main-activities">
 				<span>далі</span>
 				<i class="fa fa-angle-down fa-1x next-icon" aria-hidden="true"></i>
 			</div>
