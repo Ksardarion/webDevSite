@@ -2,20 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require_once "sys/classes/lang.class.php";
-if ($_GET['lang'] == "ua") {
-	$ua = 'lang-active';
-} else {
-	$ua = '';
-}
-if ($_GET['lang'] == "ru") {
-	$ru = 'lang-active';
-} else {
-	$ru = '';
-}
-if ($_GET['lang'] == "en") {
-	$en = 'lang-active';
-} else {
-	$en = '';
+if (isset($_GET['lang'])) {
+	$_GET['lang'] == "ua" ? $ua = 'lang-active' : $ua = '';
+	$_GET['lang'] == "ru" ? $ru = 'lang-active' : $ru = '';
+	$_GET['lang'] == "en" ? $en = 'lang-active' : $en = '';
 }
 ?>
 <!DOCTYPE html>
