@@ -16,6 +16,6 @@ $lang['NEXT_BUTT'] = 'далі';
 $lang['MENU_HOME'] = 'головна';
 $lang['MENU_NEWS'] = 'новини';
 $lang['MENU_ABOUT_US'] = 'про нас';
-$lang['MENU_PORTFOLIO'] = 'протфоліо';
+$lang['MENU_PORTFOLIO'] = 'портфоліо';
 $lang['MENU_CONTACT_US'] = 'контакти';
 ?>

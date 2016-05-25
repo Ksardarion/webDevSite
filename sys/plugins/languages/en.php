@@ -7,7 +7,7 @@ Language: English
  
 $lang = array();
  
-$lang['PAGE_TITLE'] = 'creating web sites';
+$lang['PAGE_TITLE'] = 'creating web-sites';
 $lang['SITE_NAME'] = 'webdevteam';
 $lang['NEXT_BUTT'] = 'next';
  

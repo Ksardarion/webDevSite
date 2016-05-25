@@ -2,6 +2,21 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require_once "sys/classes/lang.class.php";
+if ($_GET['lang'] == "ua") {
+	$ua = 'lang-active';
+} else {
+	$ua = '';
+}
+if ($_GET['lang'] == "ru") {
+	$ru = 'lang-active';
+} else {
+	$ru = '';
+}
+if ($_GET['lang'] == "en") {
+	$en = 'lang-active';
+} else {
+	$en = '';
+}
 ?>
 <!DOCTYPE html>
 <html lang="ua">
@@ -35,9 +50,9 @@ require_once "sys/classes/lang.class.php";
 				<a href="#" class="menu-item"><?=$lang['MENU_CONTACT_US'] ?></a>
 
 				<!-- FOR LANGUAGES -->
-				<a href="?lang=ua" class="mg50 lang lang-active">ua</a>
-				<a href="#" class="lang">ru</a>
-				<a href="?lang=en" class="lang">eng</a>
+				<a href="?lang=ua" class="mg50 lang <?=$ua?>">ua</a>
+				<a href="?lang=ru" class="lang <?=$ru?>">ru</a>
+				<a href="?lang=en" class="lang <?=$en?>">eng</a>
 			</div>
 			<div id="menu-pointer"></div>
 		</nav>

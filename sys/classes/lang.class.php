@@ -26,9 +26,9 @@ switch ($lang) {
   $lang_file = 'ua.php';
   break;
  
-  // case 'es':
-  // $lang_file = 'lang.es.php';
-  // break;
+  case 'ru':
+  $lang_file = 'ru.php';
+  break;
  
   default:
   $lang_file = 'en.php';
