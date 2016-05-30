@@ -102,7 +102,7 @@ a.lang {
 	background: #1F5B73;
 }
 
-.banner .bg {
+.cover {
 	object-fit: cover;
 	-o-object-fit: cover;
 	width: 100%;
@@ -184,23 +184,20 @@ a.lang {
 	-webkit-align-items: flex-start;
 	    -ms-flex-align: start;
 	        align-items: flex-start;
-
-	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	        justify-content: center;
 	max-width: 1400px;
 	min-width: 800px;
 }
 
-#main-activities .flex-container:last-child {
+/*#main-activities .flex-container:last-child {
 	max-width: 1024px;
 	min-width: 600px;
 	-webkit-justify-content: space-around;
 	    -ms-flex-pack: distribute;
 	        justify-content: space-around;
-}
+}*/
 
-#main-activities .flex-container:after {
+/*#main-activities .flex-container:after {
 	content: '';
 	position: absolute;
 	width: 80%;
@@ -210,13 +207,13 @@ a.lang {
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-}
+}*/
 
 #main-activities h2 {
 	display: block;
 	margin: 60px 0 80px 0;
 	text-align: center;
-	font: 800 39px 'Open Sans';
+	font: 400 39px 'Open Sans';
 	color: #333;
 }
 
@@ -231,13 +228,25 @@ a.lang {
 	position: relative;
 	z-index: 20;
 	text-align: center;
-	-ms-flex-preferred-size: 220px;
-	        -webkit-flex-basis: 220px;
-	        flex-basis: 220px;
+	flex-basis: 500px;
+	margin-left: 20px;
 	/*background: #333;*/
 }
-
-.circ-icon {
+.item img {
+	display: inline-block;
+	/*visibility: hidden;*/
+}
+.item .desc {
+	box-sizing: border-box;
+	display: block;
+	min-width: 300px;
+	max-width: 500px;
+	height: 100%;
+	text-align: left;
+	vertical-align: center;
+	padding: 0 10px;
+}
+/*.circ-icon {
 	display: inline-block;
 	position: relative;
 	width: 150px;
@@ -252,17 +261,17 @@ a.lang {
 	z-index: -1;
 	bottom: -23px;
 	display: block;
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-left: 25px solid transparent;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
 	border-right: 25px solid transparent;
-	
+
 	border-top: 45px solid #ed1b24;
-}
-.my-icon {
+}*/
+/*.my-icon {
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -285,7 +294,7 @@ a.lang {
 	background-image: url(../img/vozuk.jpg);
 	background-size: 80px 100px;
 	background-position: center center;
-}
+}*/
 .item h3 {
 	font: 400 29px 'Open Sans';
 	line-height: 30px;
@@ -313,18 +322,18 @@ a.lang {
 /* initially hide animatable objects */
 .animatable {
   visibility: hidden;
-  -webkit-animation-play-state: paused;   
-  animation-play-state: paused; 
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /* show objects being animated */
 .animated {
 	opacity: 0;
   /*visibility: visible;*/
-  
+
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  
+
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 

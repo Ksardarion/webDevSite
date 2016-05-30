@@ -48,18 +48,33 @@ require_once "sys/classes/lang.class.php";
 				<i class="fa fa-angle-down fa-1x next-icon" aria-hidden="true"></i>
 			</div>
 		</div>
+	</header>
 
 		<!-- Напрямки діяльності -->
 		<section id="main-activities">
-				<h2>Напрямки діяльності</h2>
+				<h2>Портфоліо</h2>
 				<div class="flex-container animatable moveUp">
 					<div class="item">
-						<div class="circ-icon my-icon icon-bootle"></div>
-						<h3>Виробництво горілчаних виробів</h3>
-						<p>Навіть сама чиста природна вода обов'язково повинна пройти декілька стадій спеціального очищення</p>
+						<img src="img/contactManager.svg" alt="contact mannager icon"/>
+						<div class="desc">
+							<h3>Contact Manager</h3>
+							<p>
+								Дозволяє керувати списком контактів:  додавати нові записи, редагувати або видаляти вже існуючі.
+							</p>
+						</div>
 					</div>
 
 					<div class="item">
+						<img src="img/contactManager.svg" alt="contact mannager icon"/>
+						<div class="desc">
+							<h3>Contact Manager</h3>
+							<p>
+								Дозволяє керувати списком контактів:  додавати нові записи, редагувати або видаляти вже існуючі.
+							</p>
+						</div>
+					</div>
+
+					<!-- <div class="item">
 						<div class="circ-icon my-icon icon-rack"></div>
 						<h3>Переробка креветок</h3>
 						<p>Лікеро-горілчані заводи зазвичай використовують 3 різновиди ректифікованого етилового спирту</p>
@@ -76,7 +91,7 @@ require_once "sys/classes/lang.class.php";
 						<h3>Оптова торгівля напоями</h3>
 						<p>Розливають готову горілку на автоматизованих лініях. На етапі розливу всі пляшки піддаються контролю.</p>
 					</div>
-				</div>
+				</div> -->
 
 		</section>
 
