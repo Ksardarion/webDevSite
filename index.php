@@ -56,22 +56,22 @@ require_once "sys/classes/lang.class.php";
 				<div class="flex-container animatable moveUp">
 					<div class="item">
 						<img src="img/contactManager.svg" alt="contact mannager icon"/>
-						<div class="desc">
+						<!-- <div class="desc">
 							<h3>Contact Manager</h3>
 							<p>
 								Дозволяє керувати списком контактів:  додавати нові записи, редагувати або видаляти вже існуючі.
 							</p>
-						</div>
+						</div> -->
 					</div>
 
 					<div class="item">
-						<img src="img/contactManager.svg" alt="contact mannager icon"/>
-						<div class="desc">
-							<h3>Contact Manager</h3>
+						<img src="img/star.svg" alt="star icon" class="star"/>
+						<!-- <div class="desc">
+							<h3>Star experiment</h3>
 							<p>
-								Дозволяє керувати списком контактів:  додавати нові записи, редагувати або видаляти вже існуючі.
+								Експеримент з психології, реалізований за допомогою HTML5 canvas
 							</p>
-						</div>
+						</div> -->
 					</div>
 
 					<!-- <div class="item">

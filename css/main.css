@@ -185,6 +185,7 @@ a.lang {
 	    -ms-flex-align: start;
 	        align-items: flex-start;
 	        justify-content: center;
+	flex-wrap: wrap;
 	max-width: 1400px;
 	min-width: 800px;
 }
@@ -225,16 +226,17 @@ a.lang {
 	        align-self: center;
 }*/
 .item {
+	flex-basis: 500px;
+	height: auto;
 	position: relative;
 	z-index: 20;
 	text-align: center;
-	flex-basis: 500px;
-	margin-left: 20px;
+	margin: 10px auto;
 	/*background: #333;*/
 }
 .item img {
 	display: inline-block;
-	/*visibility: hidden;*/
+	width: 100%;
 }
 .item .desc {
 	box-sizing: border-box;
@@ -305,19 +307,11 @@ a.lang {
 	margin-top: 6px;
 	font-size: 19px;
 }
-/*
-@media screen and (max-width: 1200px) {
-.circ-icon {
-	width: 130px;
-	height: 130px;
+/* for start svg icon*/
+.star {
+	border: 1px solid #1ABC9C;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.3);
 }
-
-.circ-icon:after {
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 40px solid #ed1b24;
-}
-}*/
 
 /* initially hide animatable objects */
 .animatable {
