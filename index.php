@@ -52,7 +52,7 @@ require_once "sys/classes/lang.class.php";
 
 		<!-- Напрямки діяльності -->
 		<section id="main-activities">
-				<h2>Портфоліо</h2>
+				<h2><?=$lang['MENU_PORTFOLIO']?></h2>
 				<div class="flex-container animatable moveUp">
 					<div class="item">
 						<div class="container-3d">

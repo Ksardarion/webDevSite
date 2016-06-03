@@ -21,23 +21,31 @@ switch ($lang) {
   case 'en':
   $lang_file = 'en.php';
   $en = 'lang-active';
+  $ua = '';
+  $ru = '';
   break;
  
   case 'ua':
   $lang_file = 'ua.php';
   $ua = 'lang-active';
+  $ru = '';
+  $en = '';
   break;
  
   case 'ru':
   $lang_file = 'ru.php';
   $ru = 'lang-active';
+  $ua = '';
+  $en = '';
   break;
  
   default:
   $lang_file = 'ua.php';
   $ua = 'lang-active';
- 
+  $ru = '';
+  $en = '';
 }
+
 // getcwd() - повертаэ повний шлях для поточнго каталогу
 require_once getcwd().'/sys/plugins/languages/'.$lang_file;
 ?>
