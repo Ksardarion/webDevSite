@@ -217,7 +217,31 @@ a.lang {
 	font: 400 39px 'Open Sans';
 	color: #333;
 }
+/* for 3d flip animation */
+.container-3d {
+	transform: perspective(800px);
+	transform-style: preserve-3d;
+	transition: transform 0.7s;
+}
 
+/* style for front and back side of 3d card object*/
+.front, .back,
+.container-3d {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.back {
+	transform: rotateX(180deg);
+}
+
+/* when add this class to 3d-container animation heppends */
+.flipped-3d,
+.item:hover .container-3d{
+	transform: rotateX(180deg);
+}
 /*.connection {
 	width: 200px;
 	border-top: 2px dashed #ed1b24;
@@ -227,7 +251,7 @@ a.lang {
 }*/
 .item {
 	flex-basis: 500px;
-	height: auto;
+	height: 300px;
 	position: relative;
 	z-index: 20;
 	text-align: center;
@@ -248,55 +272,6 @@ a.lang {
 	vertical-align: center;
 	padding: 0 10px;
 }
-/*.circ-icon {
-	display: inline-block;
-	position: relative;
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	background-color: #ed1b24;
-}
-
-.circ-icon:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	bottom: -23px;
-	display: block;
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	        transform: translateX(-50%);
-	border-right: 25px solid transparent;
-
-	border-top: 45px solid #ed1b24;
-}*/
-/*.my-icon {
-	background-position: center;
-	background-repeat: no-repeat;
-}
-.icon-rack {
-	background-image: url(../img/rak.jpg);
-	background-size: 110px;
-}
-
-.icon-bootle {
-	background-image: url(../img/bootle.jpg);
-	background-size: 40px 110px;
-}
-
-.icon-house {
-	background-image: url(../img/house.jpg);
-	background-size: 90px 130px;
-	background-position: center top;
-}
-.icon-vozuk {
-	background-image: url(../img/vozuk.jpg);
-	background-size: 80px 100px;
-	background-position: center center;
-}*/
 .item h3 {
 	font: 400 29px 'Open Sans';
 	line-height: 30px;
