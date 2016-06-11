@@ -55,24 +55,34 @@ require_once "sys/classes/lang.class.php";
 				<h2>Портфоліо</h2>
 				<div class="flex-container animatable moveUp">
 					<div class="item">
-						<img src="img/contactManager.svg" alt="contact mannager icon"/>
-						<!-- <div class="desc">
-							<h3>Contact Manager</h3>
-							<p>
-								Дозволяє керувати списком контактів:  додавати нові записи, редагувати або видаляти вже існуючі.
-							</p>
-						</div> -->
-					</div>
+						<div class="container-3d">
+							<div class="front">
+								<img src="img/contactManager.svg" alt="contact mannager icon" class="cover"/>
+							</div>
+							<div class="desc back">
+								<h3>Contact Manager</h3>
+								<p>
+									Дозволяє керувати списком контактів:  додавати нові записи,
+									редагувати або видаляти вже існуючі.
+								</p>
+							</div>
+						</div> <!-- container-3d -->
+					</div> <!-- item -->
 
 					<div class="item">
-						<img src="img/star.svg" alt="star icon" class="star"/>
-						<!-- <div class="desc">
-							<h3>Star experiment</h3>
-							<p>
-								Експеримент з психології, реалізований за допомогою HTML5 canvas
-							</p>
-						</div> -->
-					</div>
+						<div class="container-3d">
+							<div class="front">
+								<img src="img/star.svg" alt="star icon" class="star cover"/>
+							</div>
+							<div class="desc back">
+								<h3>Star experiment</h3>
+								<p>
+									Експеримент з психології,
+									реалізований за допомогою HTML5 canvas
+								</p>
+							</div>
+						</div> <!-- container-3d -->
+					</div> <!-- item -->
 
 					<!-- <div class="item">
 						<div class="circ-icon my-icon icon-rack"></div>
